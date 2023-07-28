@@ -3,8 +3,8 @@ import time
 import math
 #Activity 1
 #declare p1 and p2
-p1 = 
-p2 = 
+p1 = 530
+p2 = 300
 
 xs = []
 ys = []
@@ -29,7 +29,7 @@ def goal_track(img,bbox):
 
     #Activity 2
     #Uncomment the correct code 
-    #cv2.circle(img,(c1,c2),2,(0,0,255),5)
+    cv2.circle(img,(c1,c2),2,(0,0,255),5)
     #cv2.circle(img,(c2,c1),2,(0,5,255),0)
     #cv2.circle(img,(c2,c1),2,(0,0,255),5)
     #cv2.circle(img,(c1,c2),2,(0,5,255),0)
@@ -64,7 +64,7 @@ while True:
 
     #Activity 3
     #call the function to track the goal
-
+    goal_track(img,bbox)
     cv2.imshow("result",img)
             
     key = cv2.waitKey(1)
